@@ -1,0 +1,28 @@
+<% include partials/header %>
+
+<div class="container">
+	<header class="jumbotron">
+		<div class="container">
+			<h1>Welcome to PetMeow!</h1>
+			<p>Join the community and keep on love them everyday</p>
+			<p>
+				<a class="btn btn-primary btn-large" href="/pets/new">Add New Pet</a>
+			</p>
+		</div>
+	</header>
+
+	<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+		<% pets.forEach(function(pet){ %>
+			<div class="col-md-3 col-sm-6">
+				<div class="thumbnail">
+					<img src="<%= pet.image %>">
+					<div class="caption">
+						<h4><%= pet.name %></h4>
+					</div>
+				</div>	
+			</div>
+		<% }); %>
+	</div>
+</div>
+
+<% include partials/footer %>
