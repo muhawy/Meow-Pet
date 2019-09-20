@@ -9,6 +9,8 @@ In the future, this website will have other functions. Just like Street Feeding 
 
 if you want to test the demo website, you can visit this heroku link --> https://boiling-reaches-81712.herokuapp.com/
 
+This website built with NodeJS, ExpressJS, Bootstrap 3 and MongoDB.
+
 So far I'll included the following features:
 
 - Fuzzy Search 
